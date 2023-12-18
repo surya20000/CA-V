@@ -33,7 +33,7 @@ img {
 }
 
 .bod {
-    background-color: rgb(253, 251, 253);
+    background-color: rgb(250,232,224);
     width: 400px;
     height: max-content;
     /* text-align: center; */
@@ -91,6 +91,7 @@ span {
 
 .field.i {
     margin-bottom: 02vh;
+    font-size: 2vh;
 }
 
 div.form-body.i {

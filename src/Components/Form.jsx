@@ -21,9 +21,9 @@ const Form = () => {
         {errors.Name && <span>{errors.Name.message}</span>}
         <input type="email" placeholder='email' {...register('email', { required : "Please enter email", pattern: {value: /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/, message: "Please enter a valid email"}})} className='field i'/>
         {errors.email && <span>{errors.email.message}</span>}
-        <input type="password" placeholder='password' {...register('password', { required : "Please enter Password", minLength: { value: 10, message: "Password should be at least 10 characters long" }, pattern: { value: /.*[!@#$%^&*()\-_=+{};:,<.>]/, message: "Password should contain at least one special character" } })}  className='field i'/>
+        <input type="password" placeholder='Password' {...register('password', { required : "Please enter Password", minLength: { value: 10, message: "Password should be at least 10 characters long" }, pattern: { value: /.*[!@#$%^&*()\-_=+{};:,<.>]/, message: "Password should contain at least one special character" } })}  className='field i'/>
         {errors.password && <span>{errors.password.message}</span>}
-        <input type="password" placeholder='Rpassword' {...register('Rpassword', { required : "Please re-enter your password", validate: value => value === watch('password') || "Passwords do not match" })} className='field i'/>
+        <input type="password" placeholder='Re-enter your password' {...register('Rpassword', { required : "Please re-enter your password", validate: value => value === watch('password') || "Passwords do not match" })} className='field i'/>
         {errors.Rpassword && <span>{errors.Rpassword.message}</span>}
         <button type="submit" className='sub'>Submit</button>
         <p>Have already an account? <Link to="/">Login here</Link></p>
