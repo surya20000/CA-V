@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(255, 242, 216);
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 30vh;
+    width: 25vh;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 5vh;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.field {
+    /* margin-bottom: 2vh; */
+    height: 4vh;
+    /* width: 12vh; */
+}
+
+.bod {
+    background-color: rgb(253, 251, 253);
+    width: 400px;
+    height: max-content;
+    /* text-align: center; */
+    margin: auto auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+span {
+    color: red;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.success {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(53, 123, 247);
+    font-size: 4vh;
+}
+
+.success {
+    font-size: 3vh;
+}
+
+.value {
+    font-size: 4vh;
+}
+
+.inp {
+    width: 60vh;
+    height: 4vh;
+    /* border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    box-shadow: 3px 2px;
+}
+
+.register {
+    padding: 10px 10px;
+    border-color: red;
+}
+
+.bookI {
+    margin: 0;
+    width: 50%;
+}
+
+.field.i {
+    margin-bottom: 02vh;
+}
+
+div.form-body.i {
+    display: grid;
+    /* grid-template-columns: auto; */
+}
+
+.books {
+    width: 200px;
+}
+
+.sub {
+    width: 20vh;
+    height: max-content;
+    font-size: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+  }
+  h1{
+    color: red;
+  }
+
+  .searchN{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .simg{
+    height: 40px;
+    width: 35px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .h{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+  }
